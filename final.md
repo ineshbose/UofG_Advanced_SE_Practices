@@ -12,7 +12,6 @@
 | ---- |
 | CS20 |
 
-
 ## Writing Quality
 
 | Comments |
@@ -23,9 +22,7 @@
 | --------------- |
 |                 |
 
-##  Problem Identification
-
-<!-- Describe the problem, issue or opportunity that you wish to address with the Project Team. Explain what you think the underlying cause of the issue is for the team and provide evidence that you have that the problem you have identified is real. You are required to conduct formative assessments of your team's software process: use this to help identify an issue. -->
+## Problem Identification
 
 Over the course, through the coach meetings and the warmup PIA, the team has grown to solve problems and use best practices. Because of this, it was difficult to find a critical flaw in their development strategy. They have seemed to research into solutions for their project and have made good progress - they are near the final stages; this may have been possible because of their approach of working in different areas of the project like the backend server, parsing, interface and frontend client. While this approach seems great on paper, I was worried for the team facing *"subsystem optimisation"* where the team members would only have knowledge of the area they were working on.
 
@@ -43,12 +40,12 @@ The team, being self-aware, had also mentioned that they should have pipelines a
 
 ## Description and Justification of PIA
 
-<!-- Describe the PIA you will undertake with the team. Explain why you think the activity will address the issue you have identified. You can provide references to descriptions of standard practices rather than repeating them in detail. However, you should outline any customisations you intend to make to a practice. -->
-
-Similar to the [warmup PIA [2]](https://stgit.dcs.gla.ac.uk/2504266b/asep-coursework-2021/-/blob/master/warmup.md), the PIA was sketched out and conducted on a [separate repository [3]](https://stgit.dcs.gla.ac.uk/2504266b/asep-final-pia-2021/) which would have a setup similar to theirs, but they would have to do minor feature implementations which are expected to take less than an hour if they follow the instructions and example given to them.
+Similar to the [warmup PIA [2]](https://stgit.dcs.gla.ac.uk/2504266b/asep-coursework-2021/-/blob/master/warmup.md), the PIA was sketched out and conducted on a [separate repository [3]](https://stgit.dcs.gla.ac.uk/2504266b/asep-final-pia-2021/) which would have a setup similar to theirs, but they would have to do minor feature implementations which are expected to take less than an hour if they follow the instructions and example given to them. The reason for this repository was for the team to have practical idea.
 
 Once they have implemented their features (along with tests written for them), each merge request created by the members would be reviewed thoroughly to showcase the process of a code review. This was planned for the [warmup PIA [2]](https://stgit.dcs.gla.ac.uk/2504266b/asep-coursework-2021/-/blob/master/warmup.md) as well, but not the main focus.
 
+This time, however, for the final PIA, code reviews are the priority. As mentioned during [problem identification](#problem-identification), this is to avoid the team members to specialise in their areas but be prompt with their whole project - no matter what size of the stack. There are also many additional advantages linked to conducting (regular) code reviews which the team could use; these include consistency in code style, design and implementation (elements like variable names, linting, etc), optimised code with better performance and less bugs (since the code is reviewed by others therefore avoiding logic errors), and better collaboration (making better estimates for issues, and improving quality for future tasks by allowing knowledge to be shared [8]).
+
 | Comments |
 | -------- |
 |          |
@@ -56,11 +53,12 @@ Once they have implemented their features (along with tests written for them), e
 | Marks out of 10 |
 | --------------- |
 |                 |
-
 
 ## Monitoring and Evaluation
 
-<!-- Describe how you will evaluate the PIA. State your objectives for the PIA. You should state any measurements that you will record, how and when you will record them and how you plan to evaluate them. Measurements may be quantitative (lines code, for example) or qualitative (discussions during a retrospective, for example). -->
+The evaluation would happen through the team continuing to use code reviews and merge requests in their project development practice. For the remaining issues they have for the remaining sprint(s), it would be expected that they work on them through issue branching which would create a merge request onto their development trunk. This merge request would need to be approved by all team members [6] after they would have gone through the changes and understood the solution. If there was something that they feel was confusing or done better, they could start a thread in the merge request [7] and this would mean that the team is collaborating more and producing better code.
+
+Over couple of weeks, these merge requests would be observed and metrics such as comments, size, approval time will be noted. The expectation from these metrics would be to see how many commits were associated to a merge request, how many merge requests were approved from the team members and then merged, and finally how many merge requests did have problems (which should decline since they will review the code and decide on styling).
 
 | Comments |
 | -------- |
@@ -69,12 +67,25 @@ Once they have implemented their features (along with tests written for them), e
 | Marks out of 10 |
 | --------------- |
 |                 |
-
 
 ## Implementation Report
 
-<!-- Provide an overview of the implementation of the PIA, including the dates, times when activities took place and the teams which participated. Summarise problems or unexpected situations that arose during the implementation of the PIA.
-Report any changes that were made to the implementation plan as a result of problems encountered during the implementation of the PIA. Give the reasons that the changes were made, including any supporting evidence (qualitative and/or quantitative) that justified the change. -->
+Referring to their project, a Django backend server with a React frontend app was setup. The React app would be a browser extension that would be a calculator and send an API call to the backend to get the result of an operation - just like how their project has a browser extension that would make a call to their Django server to generate CSV data from the tables on the page.
+
+This activity project (called "*calext*") would allow users to raise a number to an exponent, and needed implementation for 1) addition, 2) subtraction, 3) multiplication and 4) division. Each member had one operation to implement and write tests for. This worked out very well for adequate changes in a merge request and to write test for the feature being added.
+
+<div align="center">
+   <a href="https://stgit.dcs.gla.ac.uk/2504266b/asep-final-pia-2021/" target="_blank">
+      <img src="assets/calext_preview.png" alt="A preview of the extension" style="border-radius: 10px;">
+   </a>
+</div>
+
+The team got on this early in the day, and then during the normal scheduled coach meeting which is at the end of the day, we did our code reviews where some articles and references were discussed that talk about advantages and guidance of code reviews [8, 9] including checklists [4, 5] that then was followed as the team went through each merge request. A big part of this included about the team members being human, which meant that mistakes are expected, and there should not be anything robotic. The code should be readable by another human that would be reviewing the merge request, and suggestions should be polite; for example, using "we" like "can ~~you~~ we refactor this to be recursive?". For each merge request made by a member, some questions were asked like:
+
+- How did you feel about working on this?
+- Did you have any troubles in making the changes?
+- How was this tested?
+- Is there anything you would like to do differently here?
 
 | Comments |
 | -------- |
@@ -84,10 +95,26 @@ Report any changes that were made to the implementation plan as a result of prob
 | --------------- |
 |                 |
 
+## Results
 
-### Results
+The team members took their time in making their changes and creating a merge request, but everyone was done before our scheduled meeting for the code reviews. Most merge requests had styling issues, and a lot of the implementations were similar to the code they were asked to refer to (which is not necessarily a problem). The team found the reviews very engaging since every member had the chance to interact, explain their changes and discuss alternatives.
 
-<!-- Present a detailed breakdown of the data gathered during the PIA. You do not need to include the raw data gathered during the PIA, although you may include this in an appendix if you wish. Rather, you should summarise the key results identified in the data, such as trends in quantitative data, or important themes gathered from qualitative data, such as retrospectives (include extracts from discussions as appropriate). You can also use graphs to illustrate quantitative data. -->
+<div align="center">
+   <a href="https://stgit.dcs.gla.ac.uk/2504266b/asep-final-pia-2021/-/merge_requests?scope=all&state=all" target="_blank">
+      <img src="assets/mr_description.png" alt="Merge request description" style="border-radius: 10px;">
+      <img src="assets/mr_style_issue.png" alt="Linting problems in a merge request" style="border-radius: 10px;">
+   </a>
+</div>
+
+The activity, unfortunately, failed and did not make the team make use of merge requests and code reviews. Their project had already reached a point of saturation where the main idea had been implemented and did not have enough motivation to go further but do the essentials which they did on the development trunk directly.
+
+Their project, however, now has test suites at least which they were able to setup by the foundations provided by the PIA.
+
+<div align="center">
+   <a href="https://stgit.dcs.gla.ac.uk/team-project-h/2021/cs20/cs20-main/-/blob/developer/.gitlab-ci.yml" target="_blank">
+      <img src="assets/team_ci.png" alt="Configured pipeline for CS20's project" style="border-radius: 10px;">
+   </a>
+</div>
 
 | Comments |
 | -------- |
@@ -97,11 +124,9 @@ Report any changes that were made to the implementation plan as a result of prob
 | --------------- |
 |                 |
 
-
 ## Critical Assessment
 
-<!-- Develop A critical assessment of the success and/or failure of the PIA based on the data gathered during the exercise. You should present an honest assessment of the PIA, identifying both successes and failures as appropriate. Link the  discussion to evidence captured during the exercise. Relate the evidence to other literature that covers similar PIA
-   activities, such as similar case studies, text book descriptions of the PIA that include risks and benefits and/or industry white papers. -->
+It was upsetting to see the number of merge requests go down immediately to 0 right after the PIA had been conducted, since I was hoping to see results and gather insightful data. It would have been useful if the team had been made aware of this practice at the start of the project and see some real life applications / usage in the industry so that they had something to aim for. While my direct contribution, as a coach, to their project needs to be limited, if there were systems set up on their repository restricting direct commits to their trunk and setting up issues / branches, it would have given the team necessity to perform code reviews.
 
 | Comments |
 | -------- |
@@ -113,7 +138,7 @@ Report any changes that were made to the implementation plan as a result of prob
 
 ## Future Process Improvement Activity
 
-<!-- Make a recommendation for a future process improvement activity. This should be related to your insights gathered during this activity. For example, if you found that pair programming was ineffective, is their reason to believe an alternative collaborative activity, such as continuous code reviews, or mob programming would be more effective. Explain your reason for choosing an activity. -->
+Given that this activity failed, it would be beneficial for the team to improve their process and create a foundation for code reviews by doing **standups** where instead of reviewing practical code, they would update each other on the tasks that they are working on by answering simple questions like "what did I work on?", "what am I working on now?" and "what issues are blocking me?" which would highlight progress, flag team blockers and strengthen the team [10], so that when the time comes, that task could be followed-up, understood and reviewed. These standup meetings could be scheduled at the convenience of the team members (but needs to be regular, frequent and short), and also refer to a KANBAN board which could further aid their development.
 
 | Comments |
 | -------- |
@@ -125,14 +150,22 @@ Report any changes that were made to the implementation plan as a result of prob
 
 ## References
 
-[1] Bose, Inesh. 2021. ASEP Coursework 2021. https://stgit.dcs.gla.ac.uk/2504266b/asep-coursework-2021
+[1] Bose, Inesh. 2021. ASEP Coursework 2021. <https://stgit.dcs.gla.ac.uk/2504266b/asep-coursework-2021>
 
-[2] Bose, Inesh. 2021. ASEP Warmup PIA 2021. https://stgit.dcs.gla.ac.uk/2504266b/asep-warmup-pia-2021
+[2] Bose, Inesh. 2021. ASEP Warmup PIA 2021. <https://stgit.dcs.gla.ac.uk/2504266b/asep-warmup-pia-2021>
 
-[3] Bose, Inesh. 2022. ASEP Final PIA 2021. https://stgit.dcs.gla.ac.uk/2504266b/asep-final-pia-2021
+[3] Bose, Inesh. 2022. ASEP Final PIA 2021. <https://stgit.dcs.gla.ac.uk/2504266b/asep-final-pia-2021>
 
-[4] Omeyer, Alex. 2021. Code Review: A Comprehensive Checklist. https://dev.to/alexomeyer/code-review-a-comprehensive-checklist-5gnm
+[4] Omeyer, Alex. 2021. Code Review: A Comprehensive Checklist. <https://dev.to/alexomeyer/code-review-a-comprehensive-checklist-5gnm>
 
-[5] Glodian, Mykhailo. 2021. The Ultimate Code Quality Checklist. https://duecode.io/blog/the-ultimate-code-quality-checklist/
+[5] Glodian, Mykhailo. 2021. The Ultimate Code Quality Checklist. <https://duecode.io/blog/the-ultimate-code-quality-checklist/>
 
-[6]
+[6] GitLab. Review a merge request. <https://docs.gitlab.com/ee/user/project/merge_requests/reviews/>
+
+[7] GitLab. Comments and threads. <https://docs.gitlab.com/ee/user/discussions/>
+
+[8] Radigan, Dan. Why code reviews matter (and actually save time!). <https://www.atlassian.com/agile/software-development/code-reviews>
+
+[9] Unadkat, Jash. 2020. Understanding Code Review and its Benefits. <https://www.browserstack.com/guide/code-review-benefits>
+
+[10] Radigan, Dan. <https://www.atlassian.com/agile/scrum/standups>
