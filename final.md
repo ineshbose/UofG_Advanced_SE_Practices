@@ -14,13 +14,13 @@
 
 ## Writing Quality
 
-| Comments |
-| -------- |
-|          |
+| Comments                |
+| ----------------------- |
+| Well written throughout |
 
-| Marks out of 20 |
+| Marks out of 10 |
 | --------------- |
-|                 |
+| 7               |
 
 ## Problem Identification
 
@@ -30,13 +30,13 @@ The confirmation of this suspicion was when a major issue (one that required lot
 
 The team, being self-aware, had also mentioned that they should have pipelines and testing setup at this point. For the sake of focusing on only code reviews to improve on, **testing would be discussed for merge requests** as that can be seen as the first step of a code review - tests passing.
 
-| Comments |
-| -------- |
-|          |
+| Comments                                                     |
+| ------------------------------------------------------------ |
+| Good, I sympathise with the rationale for including testing, although think it risky.  If anything, I would have advised to address the testing issue first, before trying to tackle code reviews in a later (hypothetical!) PIA. |
 
 | Marks out of 10 |
 | --------------- |
-|                 |
+| 9               |
 
 ## Description and Justification of PIA
 
@@ -46,13 +46,13 @@ Once they have implemented their features (along with tests written for them), e
 
 This time, however, for the final PIA, code reviews are the priority. As mentioned during [problem identification](#problem-identification), this is to avoid the team members to specialise in their areas but be prompt with their whole project - no matter what size of the stack. There are also many additional advantages linked to conducting (regular) code reviews which the team could use; these include consistency in code style, design and implementation (elements like variable names, linting, etc), optimised code with better performance and less bugs (since the code is reviewed by others therefore avoiding logic errors), and better collaboration (making better estimates for issues, and improving quality for future tasks by allowing knowledge to be shared [8]).
 
-| Comments |
-| -------- |
-|          |
+| Comments                                                     |
+| ------------------------------------------------------------ |
+| Not completely clear if  the code reviews will take place on project code or not? |
 
 | Marks out of 10 |
 | --------------- |
-|                 |
+| 6               |
 
 ## Monitoring and Evaluation
 
@@ -60,13 +60,13 @@ The evaluation would happen through the team continuing to use code reviews and 
 
 Over couple of weeks, these merge requests would be observed and metrics such as comments, size, approval time will be noted. The expectation from these metrics would be to see how many commits were associated to a merge request, how many merge requests were approved from the team members and then merged, and finally how many merge requests did have problems (which should decline since they will review the code and decide on styling).
 
-| Comments |
-| -------- |
-|          |
+| Comments                                                     |
+| ------------------------------------------------------------ |
+| Excellent.  What about getting qualitative feedback from the team too? |
 
 | Marks out of 10 |
 | --------------- |
-|                 |
+| 7               |
 
 ## Implementation Report
 
@@ -87,13 +87,13 @@ The team got on this early in the day, and then during the normal scheduled coac
 - How was this tested?
 - Is there anything you would like to do differently here?
 
-| Comments |
-| -------- |
-|          |
+| Comments                                                     |
+| ------------------------------------------------------------ |
+| Good, I think some more of this detail should be in the plan though and more information about how the implementation played out stated here. |
 
 | Marks out of 10 |
 | --------------- |
-|                 |
+| 7               |
 
 ## Results
 
@@ -116,37 +116,37 @@ Their project, however, now has test suites at least which they were able to set
    </a>
 </div>
 
-| Comments |
-| -------- |
-|          |
+| Comments                                                     |
+| ------------------------------------------------------------ |
+| Hmm, so if you had collected metrics, they would have been all 0?  Think you should state this explicitly in a table. |
 
 | Marks out of 20 |
 | --------------- |
-|                 |
+| 10              |
 
 ## Critical Assessment
 
 It was upsetting to see the number of merge requests go down immediately to 0 right after the PIA had been conducted, since I was hoping to see results and gather insightful data. It would have been useful if the team had been made aware of this practice at the start of the project and see some real life applications / usage in the industry so that they had something to aim for. While my direct contribution, as a coach, to their project needs to be limited, if there were systems set up on their repository restricting direct commits to their trunk and setting up issues / branches, it would have given the team necessity to perform code reviews.
 
-| Comments |
-| -------- |
-|          |
+| Comments                                                     |
+| ------------------------------------------------------------ |
+| How could you have motivated code reviews to be adopted in the team?  Did you do any related reading on the issue? |
 
 | Marks out of 20 |
 | --------------- |
-|                 |
+| 5               |
 
 ## Future Process Improvement Activity
 
 Given that this activity failed, it would be beneficial for the team to improve their process and create a foundation for code reviews by doing **standups** where instead of reviewing practical code, they would update each other on the tasks that they are working on by answering simple questions like "what did I work on?", "what am I working on now?" and "what issues are blocking me?" which would highlight progress, flag team blockers and strengthen the team [10], so that when the time comes, that task could be followed-up, understood and reviewed. These standup meetings could be scheduled at the convenience of the team members (but needs to be regular, frequent and short), and also refer to a KANBAN board which could further aid their development.
 
-| Comments |
-| -------- |
-|          |
+| Comments                        |
+| ------------------------------- |
+| Good thinking here - excellent. |
 
 | Marks out of 10 |
 | --------------- |
-|                 |
+| 9               |
 
 ## References
 
